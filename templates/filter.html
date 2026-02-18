@@ -1,0 +1,38 @@
+{% load userdefinefilter %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+
+
+        <h1>This is filter </h1>
+        <h2>{{data}}</h2>
+        <h2>{{data| length}}</h2>
+        <h2>{{data| lower}}</h2>
+        <h2>{{data| upper}}</h2>
+        <h2>{{data| capfirst}}</h2>
+        <h2>{{data| title}}</h2>
+        <h2>{{data| truncatewords:3}}</h2>
+        <h2>{{data| first}}</h2>
+
+        <h1>{{dt}}</h1>
+        
+        <h2>{{data| last}}</h2>
+        <h2>{{data| join:"-"}}</h2>
+        <h2>{{data| random}}</h2>
+        <h3>{{uf| cap}}</h3>
+        
+
+    </center>
+
+</body>
+
+</html>
